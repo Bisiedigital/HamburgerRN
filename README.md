@@ -82,5 +82,4 @@ To learn more about React Native, take a look at the following resources:
 # HamburgerRN
 This is a RN Project that describes about ReCaptcha, navigation, icons, and many more things.
 
-# ReCaptcha GIF
-![This is ReCaptcha component implemented using the library 'react-native-google-recaptcha-v2'](./src/images/recaptcha.gif)
+[!ReCaptcha GIF](./src/images/recaptcha.gif)
