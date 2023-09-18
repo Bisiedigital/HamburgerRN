@@ -11,6 +11,7 @@ import ReCaptcha from './ReCaptcha';
 import HelloWorldScreen from './HelloWorldScreen';
 import Airtime from './src/sidebar/Airtime';
 import LogIn from './LogIn';
+import ReCaptchaThatWorks from './ReCaptchaThatWorks';
 
 const Stack = createStackNavigator();
 
@@ -34,6 +35,7 @@ const App = () => {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="AboutOur" component={AboutUs} />
         <Stack.Screen name="Captcha Verification" component={ReCaptcha} />
+        <Stack.Screen name="Captcha ThatWorks Verification" component={ReCaptchaThatWorks} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="HelloWorld" component={HelloWorldScreen} />
         <Stack.Screen name="Top up Airtime" component={Airtime} />

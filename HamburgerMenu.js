@@ -43,11 +43,17 @@ const HamburgerMenu = () => {
   };
 
   const handleReCaptchaPress = () => {
-    // navigation.navigate('Profile');
     navigation.navigate('Captcha Verification');
      setMenuVisible(false);
      setIsModalVisible(false);
     console.log('Navigating to "ReCaptcha" page!');
+  };
+
+  const handleReCaptchaThatWorksPress = () => {
+    navigation.navigate('Captcha ThatWorks Verification');
+     setMenuVisible(false);
+     setIsModalVisible(false);
+    console.log('Navigating to "react-native-recaptcha-that-works" page!');
   };
   const handleAirtimePress = () => {
     navigation.navigate('Top up Airtime');
@@ -123,6 +129,14 @@ const HamburgerMenu = () => {
               onPress={handleReCaptchaPress}>
               <Text>ReCaptcha</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.listItem}
+              onPress={handleReCaptchaThatWorksPress}>
+              <Text>ReCaptcha ThatWorks</Text>
+            </TouchableOpacity>
+
+
             <TouchableOpacity
               style={[styles.listItem, {marginTop: 30}]}
               onPress={handleLogInPress}>
