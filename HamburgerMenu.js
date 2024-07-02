@@ -37,22 +37,22 @@ const HamburgerMenu = () => {
 
   const handleAboutUsPress = () => {
     navigation.navigate('AboutOur');
-     setMenuVisible(false);
-     setIsModalVisible(false);
+    setMenuVisible(false);
+    setIsModalVisible(false);
     console.log('Navigating to About Us');
   };
 
   const handleReCaptchaPress = () => {
     navigation.navigate('Captcha Verification');
-     setMenuVisible(false);
-     setIsModalVisible(false);
+    setMenuVisible(false);
+    setIsModalVisible(false);
     console.log('Navigating to "ReCaptcha" page!');
   };
 
   const handleReCaptchaThatWorksPress = () => {
     navigation.navigate('Captcha ThatWorks Verification');
-     setMenuVisible(false);
-     setIsModalVisible(false);
+    setMenuVisible(false);
+    setIsModalVisible(false);
     console.log('Navigating to "react-native-recaptcha-that-works" page!');
   };
   const handleAirtimePress = () => {
@@ -72,8 +72,14 @@ const HamburgerMenu = () => {
     setMenuVisible(false);
     setIsModalVisible(false);
   };
+  const handleForTestingPress = () => {
+    navigation.navigate('For Testing');
+    setMenuVisible(false);
+    setIsModalVisible(false);
+    console.log('Navigating to "For Testing" page!');
+  };
 
-  const fettanLogo = require('./fettan_icon.png');
+  const fettanLogo = require('./Bisiedigital_Logo_72x72.jpeg');
 
   return (
     <View>
@@ -136,11 +142,16 @@ const HamburgerMenu = () => {
               <Text>ReCaptcha ThatWorks</Text>
             </TouchableOpacity>
 
-
             <TouchableOpacity
               style={[styles.listItem, {marginTop: 30}]}
               onPress={handleLogInPress}>
               <Text>Log In</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[styles.listItem, {marginTop: 30}]}
+              onPress={handleForTestingPress}>
+              <Text>For Testing</Text>
             </TouchableOpacity>
           </View>
         </Modal>

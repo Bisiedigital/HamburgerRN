@@ -9,10 +9,11 @@ import Profile from './Profile';
 import HomeScreen from './HomeScreen';
 import ReCaptcha from './ReCaptcha';
 import HelloWorldScreen from './HelloWorldScreen';
-import Airtime from './src/sidebar/Airtime';
+import Airtime from './src/components/sidebar/Airtime';
 import LogIn from './LogIn';
 import ReCaptchaThatWorks from './ReCaptchaThatWorks';
 import SplashScreen from 'react-native-splash-screen';
+import UserList from './src/components/practice/UserList';
 
 const Stack = createStackNavigator();
 
@@ -51,6 +52,7 @@ const App = () => {
         <Stack.Screen name="HelloWorld" component={HelloWorldScreen} />
         <Stack.Screen name="Top up Airtime" component={Airtime} />
         <Stack.Screen name="Log In" component={LogIn} />
+        <Stack.Screen name="For Testing" component={UserList} />
       </Stack.Navigator>
     </NavigationContainer>
   );
